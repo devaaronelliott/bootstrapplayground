@@ -32,6 +32,9 @@
 
           </div>
           <div class="modal-footer">
+            <label >
+              share <input type="text" class="share-src">
+            </label>
           </div>
         </div>
       </div>
@@ -69,6 +72,7 @@
 
           var modal = $('.modal')
           modal.find('.modal-body').html('<img src="'+imagesrc+'"/>')
+          modal.find('.share-src').val(imagesrc)
         })
       })
       
